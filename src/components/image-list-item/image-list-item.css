@@ -1,0 +1,28 @@
+.image-list-item-component {
+  display: flex; }
+  .image-list-item-component .image-container {
+    width: 40%; }
+    .image-list-item-component .image-container .image {
+      width: 100%; }
+  .image-list-item-component .details {
+    width: 60%;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .image-list-item-component .details .image-name {
+      white-space: nowrap; }
+  @media (min-width: 800px) {
+    .image-list-item-component {
+      font-size: 1.2em; }
+      .image-list-item-component .details .image-name {
+        margin-bottom: 20px; } }
+  @media (min-width: 1000px) {
+    .image-list-item-component {
+      margin: 5px;
+      width: 30%; }
+      .image-list-item-component .image-container {
+        width: 100%; }
+        .image-list-item-component .image-container .image {
+          width: 100%; }
+      .image-list-item-component .details {
+        display: none; } }

@@ -1,0 +1,18 @@
+.editable-property-row-component {
+  margin: 10px 0;
+  display: flex;
+  align-items: baseline;
+
+  .label {
+    flex-basis: 30%;
+  }
+
+  .read-value {
+    border-bottom: 1px dotted grey;
+    cursor: pointer;
+  }
+
+  .value {
+    flex-grow: 1;
+  }
+}

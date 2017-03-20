@@ -1,0 +1,49 @@
+.image-list-item-component {
+  display: flex;
+
+  .image-container {
+    width: 40%;
+
+    .image {
+      width: 100%;
+    }
+  }
+  .details {
+    width: 60%;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    .image-name {
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: 800px) {
+    font-size: 1.2em;
+
+    .details {
+      .image-name {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    margin: 5px;
+    width: 30%;
+
+    .image-container {
+      width: 100%;
+
+      .image {
+        width: 100%;
+      }
+    }
+
+    .details {
+      display: none;
+    }
+  }
+}
+

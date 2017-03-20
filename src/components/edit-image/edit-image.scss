@@ -1,0 +1,90 @@
+@import "../../mixins.scss";
+
+.edit-image-component {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f6f6;
+    
+    h1 {
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        align-self: center;
+    }
+
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                &.save-button {
+                    @include save-button;
+                }
+
+                &.preview-button {
+                    background-color: orange;
+                    color: white;
+                    border-color: darkorange;
+                }
+
+                &.delete-button {
+                    margin-top: 20px;
+                    background-color: #e21008;
+                    color: white;
+                    border-color: #930302;
+                }
+            }
+        }
+
+    }
+
+
+    @media (min-width: 500px) {
+        .details-container {
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+                button {
+                    margin: 5px !important;
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+
+        img.image {
+            max-width: 40%;
+        }
+
+        .details-container {
+            flex-grow: 2;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        padding: 0 50px;
+        .details-container {
+            padding-left: 5%;
+            .buttons {
+                justify-content: flex-start;
+                button {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+

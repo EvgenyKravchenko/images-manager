@@ -1,0 +1,54 @@
+.edit-image-component {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f6f6f6; }
+  .edit-image-component h1 {
+    text-align: center; }
+  .edit-image-component .image {
+    width: 100%;
+    align-self: center; }
+  .edit-image-component .details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px; }
+    .edit-image-component .details-container .buttons {
+      display: flex;
+      flex-direction: column; }
+      .edit-image-component .details-container .buttons button.save-button {
+        background-color: darkcyan;
+        color: white;
+        border-color: #005757; }
+      .edit-image-component .details-container .buttons button.preview-button {
+        background-color: orange;
+        color: white;
+        border-color: darkorange; }
+      .edit-image-component .details-container .buttons button.delete-button {
+        margin-top: 20px;
+        background-color: #e21008;
+        color: white;
+        border-color: #930302; }
+  @media (min-width: 500px) {
+    .edit-image-component .details-container .buttons {
+      flex-direction: row;
+      justify-content: center; }
+      .edit-image-component .details-container .buttons button {
+        margin: 5px !important;
+        width: 30%; } }
+  @media (min-width: 800px) {
+    .edit-image-component {
+      flex-direction: row; }
+      .edit-image-component img.image {
+        max-width: 40%; }
+      .edit-image-component .details-container {
+        flex-grow: 2; } }
+  @media (min-width: 1000px) {
+    .edit-image-component {
+      padding: 0 50px; }
+      .edit-image-component .details-container {
+        padding-left: 5%; }
+        .edit-image-component .details-container .buttons {
+          justify-content: flex-start; }
+          .edit-image-component .details-container .buttons button {
+            width: 20%; } }

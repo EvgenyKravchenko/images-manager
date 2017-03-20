@@ -1,0 +1,44 @@
+@import "../../mixins.scss";
+
+.image-preview-component {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(150%);
+  width: 85%;
+  height: 85%;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  transition: 0.4s transform;
+
+  &.show {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .image-preview {
+    width: 100%;
+  }
+
+  .tooltip-component {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .buttons {
+    button {
+      margin: 0 5px;
+      &.cancel-button {
+        color: grey;
+        background-color: #f6f6f6;
+      }
+      &.save-button {
+        @include save-button;
+      }
+    }
+  }
+}

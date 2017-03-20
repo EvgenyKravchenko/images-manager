@@ -1,0 +1,30 @@
+.image-preview-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(150%);
+  width: 85%;
+  height: 85%;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: 0.4s transform; }
+  .image-preview-component.show {
+    transform: translateX(-50%) translateY(-50%); }
+  .image-preview-component .image-preview {
+    width: 100%; }
+  .image-preview-component .tooltip-component {
+    width: 30%;
+    margin: 0 auto; }
+  .image-preview-component .buttons button {
+    margin: 0 5px; }
+    .image-preview-component .buttons button.cancel-button {
+      color: grey;
+      background-color: #f6f6f6; }
+    .image-preview-component .buttons button.save-button {
+      background-color: darkcyan;
+      color: white;
+      border-color: #005757; }

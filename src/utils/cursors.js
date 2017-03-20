@@ -1,0 +1,25 @@
+export default [
+	'auto',
+	'default',
+
+	'alias',
+	'all-scroll',
+	'cell',
+	'context-menu',
+	'col-resize',
+	'copy',
+	'crosshair',
+	'grab',
+	'help',
+	'move',
+	'no-drop',
+	'none',
+	'not-allowed',
+	'pointer',
+	'progress',
+	'text',
+	'vertical-text',
+	'wait',
+	'zoom-in',
+	'zoom-out'
+];

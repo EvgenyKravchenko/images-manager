@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.upload-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-top: 20px;
+}

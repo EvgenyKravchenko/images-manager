@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "redux-devtools": "^3.3.2"
+  }
+}
